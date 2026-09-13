@@ -1,0 +1,48 @@
+%% Plik główny dokumentu. Buduj poleceniem `latexmk` (konfiguracja w .latexmkrc).
+
+\documentclass[a4paper,12pt]{article}
+
+\input{preamble/packages}
+\input{preamble/commands}
+
+\graphicspath{{img/}}
+\addbibresource{bibliografia.bib}
+
+\title{Tytuł dokumentu}
+\author{Imię Nazwisko}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    \input{tex/streszczenie}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%--------------------------------------
+% Rozdziały — każdy w osobnym katalogu tex/<nr>-<nazwa>/
+%--------------------------------------
+\input{tex/1-wprowadzenie/main}
+\input{tex/2-przyklady/main}
+\input{tex/3-podsumowanie/main}
+
+%--------------------------------------
+% Literatura i spisy
+%--------------------------------------
+\newpage
+\printbibliography[heading=bibintoc]
+
+\listoffigures
+\listoftables
+
+%--------------------------------------
+% Załączniki (opcjonalne)
+%--------------------------------------
+% \appendix
+% \input{tex/zalaczniki/main}
+
+\end{document}

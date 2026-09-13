@@ -1,0 +1,28 @@
+# Katalog budowania (latexmk $out_dir)
+build/
+
+# Pliki pomocnicze LaTeX, gdyby powstały poza build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.xdv
+
+# PDF dokumentu generowany w katalogu głównym
+/main.pdf
+
+# System i edytory
+.DS_Store
+Thumbs.db
+*~
+.*.swp

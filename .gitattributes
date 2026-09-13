@@ -1,0 +1,14 @@
+# Normalizacja końców linii
+* text=auto eol=lf
+
+*.tex  text diff=tex
+*.bib  text
+*.cls  text diff=tex
+*.sty  text diff=tex
+
+# Pliki binarne
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.svg  text

@@ -1,0 +1,39 @@
+%% Pakiety. Dokument kompilowany przez LuaLaTeX (patrz .latexmkrc).
+
+% Język i typografia
+\usepackage[polish]{babel}
+\usepackage{fontspec}             % Czcionki OpenType (domyślnie Latin Modern)
+\usepackage{microtype}            % Lepsze łamanie i justowanie
+\usepackage{csquotes}             % \enquote{...} z cudzysłowami zależnymi od języka
+
+% Układ strony
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}             % \onehalfspacing, \doublespacing
+
+% Matematyka i jednostki
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[locale=PL]{siunitx}   % \qty{3.3}{\volt}, \num{1e-3}
+
+% Rysunki i tabele
+\usepackage{graphicx}
+\usepackage{float}                % Umiejscowienie [H]
+\usepackage{booktabs}             % \toprule, \midrule, \bottomrule
+\usepackage{tabularx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+
+% Listy i drobiazgi
+\usepackage{enumitem}
+\usepackage{xspace}               % Odstęp po makrach tekstowych
+
+% Kolory i grafika wektorowa
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+
+% Bibliografia (biber)
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+
+% Odnośniki — hyperref ładujemy jako jeden z ostatnich pakietów
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink]{cleveref} % \cref{...} → „rys. 1”, „tab. 2”
