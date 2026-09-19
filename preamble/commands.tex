@@ -1,26 +1,2 @@
-%% Własne makra i ustawienia dokumentu.
-
-% Przykładowe makro skrótu
-\newcommand{\np}{np.\@\xspace}
-
-% Polskie nazwy dla \cref (cleveref nie ma wbudowanego języka polskiego)
-\crefname{section}{rozdz.}{rozdz.}
-\Crefname{section}{Rozdział}{Rozdziały}
-\crefname{subsection}{podrozdz.}{podrozdz.}
-\Crefname{subsection}{Podrozdział}{Podrozdziały}
-\crefname{figure}{rys.}{rys.}
-\Crefname{figure}{Rysunek}{Rysunki}
-\crefname{table}{tab.}{tab.}
-\Crefname{table}{Tabela}{Tabele}
-\crefname{equation}{wzór}{wzory}
-\Crefname{equation}{Wzór}{Wzory}
-\crefformat{equation}{wzór~(#2#1#3)}
-\crefname{appendix}{zał.}{zał.}
-\Crefname{appendix}{Załącznik}{Załączniki}
-
-% Kolumna tabularx z wyrównaniem do lewej
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}
-
-% Łagodniejsze łamanie wierszy z długimi słowami i adresami URL
-\setlength{\emergencystretch}{2.5em}
-\AtBeginBibliography{\sloppy}
+% Własne makra, np.:
+% \newcommand{\R}{\mathbb{R}}

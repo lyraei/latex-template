@@ -1,27 +1,5 @@
 {
-    // Budowanie deleguje do latexmk, więc silnik i katalog wyjściowy są ustawione w ../.latexmkrc.
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "latexmk (.latexmkrc)",
-            "tools": ["latexmk-rc"]
-        }
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "name": "latexmk-rc",
-            "command": "latexmk",
-            "args": [],
-            "env": {}
-        }
-    ],
-    "latex-workshop.latex.rootFile.doNotPrompt": true,
-    "latex-workshop.latex.outDir": "%DIR%/build",
-    "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.formatting.latex": "tex-fmt",
-    "files.encoding": "utf8",
-    "files.eol": "\n",
-    "[latex]": {
-        "editor.wordWrap": "on"
-    }
+    "latex-workshop.latex.recipes": [{ "name": "latexmk", "tools": ["latexmk"] }],
+    "latex-workshop.latex.tools": [{ "name": "latexmk", "command": "latexmk", "args": [] }],
+    "latex-workshop.latex.outDir": "%DIR%/build"
 }
